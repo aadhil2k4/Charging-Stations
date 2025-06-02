@@ -1,0 +1,8 @@
+{
+  "tailwindCSS.experimental.classRegex": [
+    ["class\\s*=\\s*\"([^\"]*)\"", 1],        // normal class="..."
+    ["className\\s*=\\s*\"([^\"]*)\"", 1],    // React style className="..."
+    [":class=\\s*\"([^\"]*)\"", 1],           // Vue dynamic class binding :class="..."
+    ["v-bind:class=\\s*\"([^\"]*)\"", 1]      // Vue v-bind:class="..."
+  ]
+}
